@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<header>
+    <img src="upt.png" width="300" height="200" align="right"> <img src="ingenieria en softwareupt.png" width="230" height="200">
+    </header>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>expresiones</title>
+</head>
+<body bgcolor="#335BFF">
+    <h3><a href="index.html"><b><font size="6" color="white">INICIO</font></b></a></h3>
+    <h3><a href="Expresiones.html"><b><font size="6" color="white">P&Aacute;GINA DE EXPRESIONES</font><b></a></h3>
+    <script>
+
+
+        var x = parseFloat(prompt("Ingresa valor de X: "));
+        var y = parseFloat(prompt("Ingresa valor de Y: "));
+        var t = parseFloat(prompt("Ingresa valor de T: "));
+        var h = parseFloat(prompt("Ingresa valor de H: "));
+        
+
+        document.writeln("Valor de X: " + x + '<br>');
+        document.writeln("Valor de Y: " + y + '<br>');
+        document.writeln("Valor de T: " + t + '<br>');
+        document.writeln("Valor de H: " + h + '<br>');
+
+         
+       
+        //operacion 1.1
+        var resulX1 = -((x*x)-3)/(2*x-3);
+        document.writeln('<br><br>' + "1.1) -(x^2-3)/(2x-3) = " + "-(" + x + "^2-3)/(2(" + x + ")-3) = " + resulX1.toFixed(2) + '<br>');
+
+        //operacion 1.2
+        var a1=(x*x*x)-1;
+        var a2=x*x+1;
+        var resulX2=a1/a2;
+        document.writeln("1.2) (x^3-1)/x(x+1) = ((" + x + "^3)-1)/" + x + "(" + x + "+1) = " + resulX2.toFixed(2) + '<br>');
+
+        //operacion 1.3
+        var b1 = x*x-7; 
+        var b2 = 2*x-1; 
+        var b3 = x*x + b2; 
+        var resulX3 = b1/b3; 
+        document.writeln("1.3) (x^2-7)/2(x^2+2x-1) = (" + x + "^2-7)/2(" + x + "^2+2(" + x +")-1) = " + resulX3.toFixed(2) + '<br>');
+
+        //operacion 1.4
+        var c1=3*(x*x)-x-2;
+        var c2=2*x-3;
+        var resulX4=c1/c2;
+        document.writeln("1.4) (3x^2-x-2)/(2x-3) = (3(" + x + ")^2-" + x + "-2)/(2(" + x + ")-3) = " + resulX4.toFixed(2) + '<br>');
+        
+        
+        document.writeln('<br>');
+       
+        //operacion 2.1
+        var d1= (2*x);
+        var d2= d1*-3;
+        var d3= (d2 + h);
+        var d4= (x+h)*(x+h);
+        var d5= d4*(x*x);
+        var resulX5=d3/d5;
+        document.writeln("2.1) -3(2x+h)/(x+h)^2x^2 = " + "-3(2(" + x + ")+" + h + ")/(" + x + "+" + h + ")^2 " + x + "^2 = " + resulX5.toFixed(2) + '<br>');
+
+        //operacion 2.2
+        var e1=2*x;
+        var e2=2*h;
+        var e3=(2*x)+1;
+        var e4=e1+e2+1;
+        var e5=e3*e4;
+        var resulX6=-4/e5;
+        document.writeln("2.2) -4/(2x+2h+1)(2x+1) = " + "-4/(2(" + x + ")2" + h + "+1)(2" + x + "+1) = " +  resulX6.toFixed(2) + '<br>');
+
+        document.writeln('<br>');
+
+        //operacion 3.1
+        var resulX7 = y-x;
+        document.writeln("3.1) y-x = " + x + "-" + y + " = " + resulX7.toFixed(2) + '<br>');
+
+        //operacion 3.2
+        var f1=t-2;
+        var f2=t+1;
+        var f3=t-1;
+        var f4=f1*f2;
+        var resulX8=f4/f3;
+        document.writeln("3.2) (t-2)(t+1)/t-1 = (" + t + "-2)(" + t + "+1)/" + t + "-1 = " + resulX8.toFixed(2) + '<br>');
+
+        document.writeln('<br>');
+
+        //operacion 4.1
+        var g1=4*(x*x)+1;
+        var g2=g1*2;
+        var g3=(4*(x*x)+(8*x)-1);
+        var g4=3*g2*g3;
+        var g5=(x+1)*(x+1)*(x+1)*(x+1);
+        var resulX9=g4/g5;
+        document.writeln("4.1) 3(4x^2+1)^2(4x^2+8x-1)/(x+1)^4 = " + "3(4(" + x + ")^2+1)^2(4(" + x + ")^2+8" + x + "-1)/(" + x +"+1)^4 = " + resulX9.toFixed(3) + '<br>');
+
+        //opereacion 4.1
+        var n1=-2*(x+1)*(x+2);
+        var n2=(2*x+1)*(2*x+1)*(2*x+1)*(2*x+1);
+        var resulX10=n1/n2;
+        document.writeln("4.2) -2(x+1)(x+2)/(2x+1)^4 = "+ "-2((" + x + ")+1)((" + x + ")+2)/(2(" + x + ")+1)^4 = " + resulX10.toFixed(2));
+
+        document.writeln('<br><br>');
+
+        //1.-El reultado mayor
+        document.writeln('<br><b>' + "1.-El resultado mayor" + '</b>');
+        document.writeln('<br>');
+
+        if(resulX1 >= resulX2 && resulX1 >= resulX3 && resulX1 >= resulX4 && resulX1 >= resulX5 && resulX1 >= resulX6 && resulX1 >= resulX7 && resulX1 >= resulX8 && resulX1 >= resulX9 && resulX1 >= resulX10)
+        {
+            document.writeln("El numero mayor es: " + resulX1.toFixed(3));
+        }
+        else if (resulX2 >= resulX1 && resulX2 >= resulX3 && resulX2 >= resulX4 && resulX2 >= resulX5 && resulX2 >= resulX6 && resulX2 >= resulX7 && resulX2 >= resulX8 && resulX2 >= resulX9 && resulX2 >= resulX10)
+        {
+            document.writeln("El numero mayor es: " + resulX2.toFixed(3));
+        }
+        else if(resulX3 >= resulX1 && resulX3 >= resulX2 && resulX3 >= resulX4 && resulX3 >= resulX5 && resulX3 >= resulX6 && resulX3 >= resulX7 && resulX3 >= resulX8 && resulX3 >= resulX9 && resulX3 >= resulX10)
+        {
+            document.writeln("El numero mayor es: " + resulX3.toFixed(3));
+        }
+        else if(resulX4 >= resulX1 && resulX4 >= resulX2 && resulX4 >= resulX3 && resulX4 >= resulX5 && resulX4 >= resulX6 && resulX4 >= resulX7 && resulX4 >= resulX8 && resulX4 >= resulX9 && resulX4 >= resulX10)
+        {
+            document.writeln("El numero mayor es: " + resulX4.toFixed(3));
+        }
+        else if(resulX5 >= resulX1 && resulX5 >= resulX2 && resulX5 >= resulX3 && resulX5 >= resulX4 && resulX5 >= resulX6 && resulX5 >= resulX7 && resulX5 >= resulX8 && resulX5 >= resulX9 && resulX5 >= resulX10)
+        {
+            document.writeln("El numero mayor es: " + resulX5.toFixed(3));
+        }
+        else if(resulX6 >= resulX1 && resulX6 >= resulX2 && resulX6 >= resulX3 && resulX6 >= resulX4 && resulX6 >= resulX5 && resulX6 >= resulX7 && resulX6 >= resulX8 && resulX6 >= resulX9 && resulX6 >= resulX10)
+        {
+            document.writeln("El numero mayor es: " + resulX6.toFixed(3));
+        }
+        else if(resulX7 >= resulX1 && resulX7 >= resulX2 && resulX7 >= resulX3 && resulX7 >= resulX4 && resulX7 >= resulX5 && resulX7 >= resulX6 && resulX7 >= resulX8 && resulX7 >= resulX9 && resulX7 >= resulX10)
+        {
+            document.writeln("El numero mayor es: " + resulX7.toFixed(3));
+        }
+        else if(resulX8 >= resulX1 && resulX8 >= resulX2 && resulX8 >= resulX3 && resulX8 >= resulX4 && resulX8 >= resulX5 && resulX8 >= resulX6 && resulX8 >= resulX7 && resulX8 >= resulX9 && resulX8 >= resulX10)
+        {
+            document.writeln("El numero mayor es: " + resulX8.toFixed(3));
+        }
+        else if(resulX9 >= resulX1 && resulX9 >= resulX2 && resulX9 >= resulX3 && resulX9 >= resulX4 && resulX9 >= resulX5 && resulX9 >= resulX6 && resulX9 >= resulX7 && resulX9 >= resulX8 && resulX9 >= resulX10)
+        {
+            document.writeln("El numero mayor es: " + resulX9.toFixed(3));
+        }
+        else if(resulX10 >= resulX1 && resulX10 >= resulX2 && resulX10 >= resulX3 && resulX10 >= resulX4 && resulX10 >= resulX5 && resulX10 >= resulX6 && resulX10 >= resulX7 && resulX10 >= resulX8 && resulX10 >= resulX9)
+        {
+            document.writeln("El numero mayor es: " + resulX8.toFixed(3));
+        }
+
+        //2.-El reultado menor
+        document.writeln('<br>');
+        document.writeln('<br><b>' + "2.-El resultado menor" + '</b>');
+        document.writeln('<br>');
+        if(resulX1 <= resulX2 && resulX1 <= resulX3 && resulX1 <= resulX4 && resulX1 <= resulX5 && resulX1 <= resulX6 && resulX1 <= resulX7 && resulX1 <= resulX8 && resulX1 <= resulX9 && resulX1 <= resulX10)
+        {
+            document.writeln("El numero menor es: " + resulX1.toFixed(3));
+        }
+        else if (resulX2 <= resulX1 && resulX2 <= resulX3 && resulX2 <= resulX4 && resulX2 <= resulX5 && resulX2 <= resulX6 && resulX2 <= resulX7 && resulX2 <= resulX8 && resulX2 <= resulX9 && resulX2 <= resulX10)
+        {
+            document.writeln("El numero menor es: " + resulX2.toFixed(3));
+        }
+        else if(resulX3 <= resulX1 && resulX3 <= resulX2 && resulX3 <= resulX4 && resulX3 <= resulX5 && resulX3 <= resulX6 && resulX3 <= resulX7 && resulX3 <= resulX8 && resulX3 <= resulX9 && resulX3 <= resulX10)
+        {
+            document.writeln("El numero menor es: " + resulX3.toFixed(3));
+        }
+        else if(resulX4 <= resulX1 && resulX4 <= resulX2 && resulX4 <= resulX3 && resulX4 <= resulX5 && resulX4 <= resulX6 && resulX4 <= resulX7 && resulX4 <= resulX8 && resulX4 <= resulX9 && resulX4 <= resulX10)
+        {
+            document.writeln("El numero menor es: " + resulX4.toFixed(3));
+        }
+        else if(resulX5 <= resulX1 && resulX5 <= resulX2 && resulX5 <= resulX3 && resulX5 <= resulX4 && resulX5 <= resulX6 && resulX5 <= resulX7 && resulX5 <= resulX8 && resulX5 <= resulX9 && resulX5 <= resulX10)
+        {
+            document.writeln("El numero menor es: " + resulX5.toFixed(3));
+        }
+        else if(resulX6 <= resulX1 && resulX6 <= resulX2 && resulX6 <= resulX3 && resulX6 <= resulX4 && resulX6 <= resulX5 && resulX6 <= resulX7 && resulX6 <= resulX8 && resulX6 <= resulX9 && resulX6 <= resulX10)
+        {
+            document.writeln("El numero menor es: " + resulX6.toFixed(3));
+        }
+        else if(resulX7 <= resulX1 && resulX7 <= resulX2 && resulX7 <= resulX3 && resulX7 <= resulX4 && resulX7 <= resulX5 && resulX7 <= resulX6 && resulX7 <= resulX8 && resulX7 <= resulX9 && resulX7 <= resulX10)
+        {
+            document.writeln("El numero menor es: " + resulX7.toFixed(3));
+        }
+        else if(resulX8 <= resulX1 && resulX8 <= resulX2 && resulX8 <= resulX3 && resulX8 <= resulX4 && resulX8 <= resulX5 && resulX8 <= resulX6 && resulX8 <= resulX7 && resulX8 <= resulX9 && resulX8 <= resulX10)
+        {
+            document.writeln("El numero menor es: " + resulX8.toFixed(3));
+        }
+        else if(resulX9 <= resulX1 && resulX9 <= resulX2 && resulX9 <= resulX3 && resulX9 <= resulX4 && resulX9 <= resulX5 && resulX9 <= resulX6 && resulX9 <= resulX7 && resulX9 <= resulX8 && resulX9 <= resulX10)
+        {
+            document.writeln("El numero menor es: " + resulX9.toFixed(3));
+        }
+        else if(resulX10 <= resulX1 && resulX10 <= resulX2 && resulX10 <= resulX3 && resulX10 <= resulX4 && resulX10 <= resulX5 && resulX10 <= resulX6 && resulX10 <= resulX7 && resulX10 <= resulX8 && resulX10 <= resulX9)
+        {
+            document.writeln("El numero menor es: " + resulX8.toFixed(3));
+        }
+        
+        
+        //3.-Promedio
+        document.writeln('<br>');
+        document.writeln('<br><b>' + "3.-Promedio" + '</b>');
+        document.writeln('<br>');
+        var Prom1 = resulX1+resulX2+resulX3+resulX4+resulX5+resulX6+resulX7+resulX8+resulX9+resulX10;
+        var Prom2= Prom1/10;
+        document.writeln("El Promedio es: " + Prom2.toFixed(3));   
+
+        //4.-La sumatoria de los elementos
+        document.writeln('<br>');
+        document.writeln('<br><b>' + "4.-La sumatoria de los elementos" + '</b>');
+        document.writeln('<br>');
+        var Prom1 = resulX1+resulX2+resulX3+resulX4+resulX5+resulX6+resulX7+resulX8+resulX9+resulX10;
+        document.writeln("La suma es de: " + Prom1.toFixed(3));
+
+        //5.- El número de resultados negativos
+        document.writeln('<br>');
+        document.writeln('<br><b>' + "5.- El número de resultados negativos" + '</b>');
+
+        if(resulX1 <=0)
+        {
+            document.writeln('<br>');
+            document.write("1.1) = " + resulX1.toFixed(3));
+        }
+        if(resulX2 <=0)
+        {
+            document.writeln('<br>');
+            document.write("1.2) = " + resulX2.toFixed(3));
+        }
+        if(resulX3 <=0)
+        {
+            document.writeln('<br>');
+            document.write("1.3) = " + resulX3.toFixed(3));
+        }
+        if(resulX4 <=0)
+        {
+            document.writeln('<br>');
+            document.write("1.4) = " + resulX4.toFixed(3));
+        }
+        if(resulX5 <=0)
+        {
+            document.writeln('<br>');
+            document.write("2.1) = " + resulX5.toFixed(3));
+        }
+        if(resulX6 <=0)
+        {
+            document.writeln('<br>');
+            document.write("2.2) = " + resulX6.toFixed(3));
+        }
+        if(resulX7 <=0)
+        {
+            document.writeln('<br>');
+            document.write("3.1) = " + resulX7.toFixed(3));
+        }
+        if(resulX8 <=0)
+        {
+            document.writeln('<br>');
+            document.write("3.2) = " + resulX8.toFixed(3));
+        }
+        if(resulX9 <=0)
+        {
+            document.writeln('<br>');
+            document.write("4.1) = " + resulX9.toFixed(3));
+        }
+        if(resulX10 <=0)
+        {
+            document.writeln('<br>');
+            document.write("4.2) = " + resulX10.toFixed(3));
+        }
+        
+        //6.- El número de resultados positivos
+        document.writeln('<br>');
+        document.writeln('<br><b>' + "6.- El número de resultados positivos" + '</b>');
+
+        if(resulX1 >=0)
+        {
+            document.writeln('<br>');
+            document.write("1.1) = " + resulX1.toFixed(3));
+        }
+        if(resulX2 >=0)
+        {
+            document.writeln('<br>');
+            document.write("1.2) = " + resulX2.toFixed(3));
+        }
+        if(resulX3 >=0)
+        {
+            document.writeln('<br>');
+            document.write("1.3) = " + resulX3.toFixed(3));
+        }
+        if(resulX4 >=0)
+        {
+            document.writeln('<br>');
+            document.write("1.4) = " + resulX4.toFixed(3));
+        }
+        if(resulX5 >=0)
+        {
+            document.writeln('<br>');
+            document.write("2.1) = " + resulX5.toFixed(3));
+        }
+        if(resulX6 >=0)
+        {
+            document.writeln('<br>');
+            document.write("2.2) = " + resulX6.toFixed(3));
+        }
+        if(resulX7 >=0)
+        {
+            document.writeln('<br>');
+            document.write("3.1) = " + resulX7.toFixed(3));
+        }
+        if(resulX8 >=0)
+        {
+            document.writeln('<br>');
+            document.write("3.2) = " + resulX8.toFixed(3));
+        }
+        if(resulX9 >=0)
+        {
+            document.writeln('<br>');
+            document.write("4.1) = " + resulX9.toFixed(3));
+        }
+        if(resulX10 >=0)
+        {
+            document.writeln('<br>');
+            document.write("4.2) = " + resulX10.toFixed(3));
+        }
+
+        //7.- ¿El resultado de la  expresión 1.3 está entre 100 y 200?
+        document.writeln('<br>');
+        document.writeln('<br><b>' + "7.- ¿El resultado de la  expresión 1.3 está entre 100 y 200?" + '</b>');
+        document.writeln('<br>');
+        if(resulX3<200 && resulX3>100)
+        {
+            document.write("Resultado dentro del rango = " + resulX3.toFixed(3));
+            
+        }
+        else
+        {
+            document.write("Resultado fuera del rango = " + resulX3.toFixed(3));
+        }
+
+        //8.- ¿El resultado de la expresión 4.1 está entre 50 y 100?
+        document.writeln('<br>');
+        document.writeln('<br><b>' + "8.- ¿El resultado de la expresión 4.1 está entre 50 y 100" + '</b>');
+        document.writeln('<br>');
+        if(resulX9<100 && resulX9>50)
+        {
+            document.write("Resultado dentro del rango = " + resulX9.toFixed(3));
+        }
+        else
+        {
+            document.write("Resultado fuera del rango = " + resulX9.toFixed(3));
+        }
+
+        //9.- ¿El resultado de la expresión 1.2 es mayor a 8?
+        document.writeln('<br>');
+        document.writeln('<br><b>' + "9.- ¿El resultado de la expresión 1.2 es mayor a 8?" + '</b>');
+        document.writeln('<br>');
+        if(resulX2>8)
+        {
+            document.write("El resultado es mayor a 8 = " + resulX2.toFixed(3));
+        }
+        else
+        {
+            document.write("El resultado es menor a 8 = " + resulX2.toFixed(3));
+        }
+
+        //10.-¿El resultado de la  expresión 3.2 es menor a 34?
+        document.writeln('<br>');
+        document.writeln('<br><b>' + "10.-¿El resultado de la  expresión 3.2 es menor a 34?" + '</b>');
+        document.writeln('<br>');
+        if(resulX8<34)
+        {
+            document.write("El resultado es menor a 34 = " + resulX8.toFixed(3));
+        }
+        else
+        {
+            document.write("El resultado es mayor a 34 = " + resulX8.toFixed(3));
+        }
+
+        //11.- ¿El promedio de los resultados está entre 89 y 120? prom2
+        document.writeln('<br>');
+        document.writeln('<br><b>' + "11.- ¿El promedio de los resultados está entre 89 y 120?" + '</b>');
+        document.writeln('<br>');
+        if(Prom2<120 && Prom2>89)
+        {
+            document.write("Resultado dentro del rango = " + Prom2.toFixed(3));
+        }
+        else
+        {
+            document.write("Resultado fuera del rango = " + Prom2.toFixed(3));
+        }
+
+        //12.-¿El resultado de la  expresión 3.1 es par?
+        document.writeln('<br>');
+        document.writeln('<br><b>' + "12.-¿El resultado de la  expresión 3.1 es par?" + '</b>');
+        document.writeln('<br>');
+        if(resulX7 %2 == 0)
+        {
+            document.write("El numero es par");
+        }
+        else
+        {
+            document.write("El numero es impar");
+        }
+
+        //13.- ¿El resultado de la  expresión 2.1 es impar?
+        document.writeln('<br>');
+        document.writeln('<br><b>' + "13.- ¿El resultado de la  expresión 2.1 es impar?" + '</b>');
+        document.writeln('<br>');
+        if(resulX5 %2 == 0)
+        {
+            document.write("El numero es par");
+        }
+        else
+        {
+            document.write("El numero es impar");
+        }
+
+        //14.- El resultado de multiplicar los resultados de la expresión 1.4 y la 3.2
+        document.writeln('<br>');
+        document.writeln('<br><b>' + "14.- El resultado de multiplicar los resultados de la expresión 1.4 y la 3.2" + '</b>');
+        document.writeln('<br>');
+        var cator = resulX4 * resulX8;
+        document.write("El resultado es: = " + cator.toFixed(3));
+
+        //15.- El resultado de restar el resultado de la expresión 4.2 menos el resultado de la expresión 1.1
+        document.writeln('<br>');
+        document.writeln('<br><b>' + "15.- El resultado de restar el resultado de la expresión 4.2 menos el resultado de la expresión 1.1" + '</b>');
+        document.writeln('<br>');
+        var quin = resulX10 - resulX1;
+        document.write("El resultado es: = " + quin.toFixed(3));
+    </script>
+
+</body>
+</html>
